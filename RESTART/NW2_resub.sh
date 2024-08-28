@@ -4,15 +4,15 @@
 #SBATCH --ntasks-per-node=48
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=16GB
-#SBATCH --time=48:00:00
-#SBATCH --job-name=EXP_NAME
+#SBATCH --time=72:00:00
+#SBATCH --job-name=p25_SpinUp
 #SBATCH --output=slurm_%j.out
 #SBATCH --error=slurm_%j.err
 #SBATCH --mail-type=END
 #SBATCH --mail-user=mp6191@nyu.edu
 
 ## Set experiment name here
-EXP_NAME=EXP_NAME
+EXP_NAME=p25_SpinUp
 
 ## Copy restart file from RESTART to INPUT within same experiment folder
 cd $SCRATCH/NW2_TracerBackscatter/$EXP_NAME/
