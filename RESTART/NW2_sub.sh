@@ -26,7 +26,4 @@ source ~/NeverWorld2/build/intel/env
 srun ~/NeverWorld2/build/intel/ocean_only/repro/MOM6
 
 ## Copy slurm files and remove work folder in home
-cd ~/NW2_TracerBackscatter
-git switch main
-cp $EXP_NAME/RESTART/slurm* $SCRATCH/NW2_Tracer_Backscatter/$EXP_NAME/RESTART
-rm -r $EXP_NAME/RESTART
+cp ~/NW2_TracerBackscatter/$EXP_NAME/RESTART/slurm* $SCRATCH/NW2_Tracer_Backscatter/$EXP_NAME/RESTART
