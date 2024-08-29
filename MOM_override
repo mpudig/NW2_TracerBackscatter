@@ -1,6 +1,6 @@
 NIGLOBAL = 120
 NJGLOBAL = 280
-DT = 900.
+DT = 750.
 
 ! === module MOM_diag_mediator ===
 DIAG_COODS  = "z Z ZSTAR"
@@ -160,7 +160,7 @@ MEKE_BHFRCOEFF = 1.0            !   [nondim] default = -1.0
                                 ! calculated.
 ! Backscatter parameters:
 BOUND_KH_WITH_MEKE = True       ! If true, use Kh from MEKE
-KILL_SWITCH_COEF = 0.25           ! coefficient for kill switch
+KILL_SWITCH_COEF = 0.208.           ! coefficient for kill switch
 KHTH_USE_EBT_STRUCT = True
 RESOLN_USE_EBT = True
 EBT_POWER = 2                   ! The power of EBT structure
