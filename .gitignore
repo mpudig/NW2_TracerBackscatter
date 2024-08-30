@@ -1,2 +1,5 @@
 # Slurm files
 slurm*
+
+# Jupyter notebooks
+.ipynb*
