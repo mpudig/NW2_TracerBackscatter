@@ -26,4 +26,4 @@ source ~/NeverWorld2/build/intel/env
 srun ~/NeverWorld2/build/intel/ocean_only/repro/MOM6
 
 ## Copy slurm files
-cp ~/NW2_TracerBackscatter/$EXP_NAME/RESTART/slurm* $SCRATCH/NW2_Tracer_Backscatter/$EXP_NAME/RESTART
+cp ~/NW2_TracerBackscatter/$EXP_NAME/RESTART/slurm* $SCRATCH/NW2_TracerBackscatter/$EXP_NAME/RESTART
