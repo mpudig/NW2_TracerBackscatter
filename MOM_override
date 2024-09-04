@@ -2,6 +2,8 @@ NIGLOBAL = 120
 NJGLOBAL = 280
 DT = 750.
 
+RESTART_CHECKSUMS_REQUIRED = False
+
 ! === module MOM_diag_mediator ===
 DIAG_COODS  = "z Z ZSTAR"
 DIAG_COORD_DEF_Z = "PARAM"
@@ -13,11 +15,11 @@ USE_NW2_TRACERS = True			!   [Boolean] default = False
                                 	! If true, use the NeverWorld2 tracers.
 KHTR = 0.0				!   [m2 s-1] default = 0.0
                                     	! The background along-isopycnal tracer diffusivity.
-NW2_TRACER_GROUPS = 1		      	! default = 3
+NW2_TRACER_GROUPS = 3		      	! default = 3
                                		! The number of tracer groups where a group is of three tracers initialized and
                                 	! restored to sin(x), y and z, respectively. Each group is restored with an
                                 	! independent restoration rate.
-NW2_TRACER_RESTORE_TIMESCALE = 730.	!   [days]
+NW2_TRACER_RESTORE_TIMESCALE = 730.0, 1460.0, 2190.0	!   [days]
                                 	! A list of timescales, one for each tracer group.
 
 ! === module MOM_lateral_mixing_coeffs ===

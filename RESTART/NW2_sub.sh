@@ -1,18 +1,18 @@
 #!/bin/bash
 
-#SBATCH --nodes=2
+#SBATCH --nodes=1
 #SBATCH --ntasks-per-node=48
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=16GB
-#SBATCH --time=36:00:00
-#SBATCH --job-name=p5_EBTBS_KHTR0
+#SBATCH --time=24:00:00
+#SBATCH --job-name=p5_EBTBS_KHTR0_9Tracer
 #SBATCH --output=slurm_%j.out
 #SBATCH --error=slurm_%j.err
 #SBATCH --mail-type=END
 #SBATCH --mail-user=mp6191@nyu.edu
 
 ## Set experiment name here
-EXP_NAME=p5_EBTBS_KHTR0
+EXP_NAME=p5_EBTBS_KHTR0_9Tracer
 
 ## Create an output directory /scratch/mp6191/NW2_TracerBackscatter/EXP_NAME and copy experiment files into it
 rm -rf $SCRATCH/NW2_TracerBackscatter/$EXP_NAME
