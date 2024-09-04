@@ -20,7 +20,7 @@
 # Diagnosed fields:
  "ocean_model", "uh",          "uh",          "snapshots%8dy", "all", "none", "none", 2
  "ocean_model", "vh",          "vh",          "snapshots%8dy", "all", "none", "none", 2
- "ocean_model", "KE",          "KE",          "snapshots%8dy", "all", "none", "none", 2
+# "ocean_model", "KE",          "KE",          "snapshots%8dy", "all", "none", "none", 2
 # "ocean_model", "dKE_dt",      "dKE_dt",      "snapshots%8dy", "all", "none", "none", 2
 # "ocean_model", "PE_to_KE",    "PE_to_KE",    "snapshots%8dy", "all", "none", "none", 2
 # "ocean_model", "KE_CorAdv",   "KE_CorAdv",   "snapshots%8dy", "all", "none", "none", 2

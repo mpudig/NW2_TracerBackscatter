@@ -19,5 +19,5 @@ NW2_TRACER_GROUPS = 3		      	! default = 3
                                		! The number of tracer groups where a group is of three tracers initialized and
                                 	! restored to sin(x), y and z, respectively. Each group is restored with an
                                 	! independent restoration rate.
-NW2_TRACER_RESTORE_TIMESCALE = 365.0, 730.0, 1460.0	!   [days]
+NW2_TRACER_RESTORE_TIMESCALE = 730.0, 1460.0, 2190.0	!   [days]
                                 	! A list of timescales, one for each tracer group.
