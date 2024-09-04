@@ -20,7 +20,7 @@
 # Diagnosed fields:
  "ocean_model", "uh",          "uh",          "snapshots%8dy", "all", "none", "none", 2
  "ocean_model", "vh",          "vh",          "snapshots%8dy", "all", "none", "none", 2
- "ocean_model", "KE",          "KE",          "snapshots%8dy", "all", "none", "none", 2
+# "ocean_model", "KE",          "KE",          "snapshots%8dy", "all", "none", "none", 2
 # "ocean_model", "dKE_dt",      "dKE_dt",      "snapshots%8dy", "all", "none", "none", 2
 # "ocean_model", "PE_to_KE",    "PE_to_KE",    "snapshots%8dy", "all", "none", "none", 2
 # "ocean_model", "KE_CorAdv",   "KE_CorAdv",   "snapshots%8dy", "all", "none", "none", 2
@@ -124,20 +124,20 @@
 
 # Tracers:
  "ocean_model", "tracer01",    "tracer01",    "tracers%8dy", "all", "none", "none", 2
- "ocean_model", "tracer01_adx", "tracer01_adx", "tracers%8dy", "all", "none", "none", 2
- "ocean_model", "tracer01_ady", "tracer01_ady", "tracers%8dy", "all", "none", "none", 2
+ #"ocean_model", "tracer01_adx", "tracer01_adx", "tracers%8dy", "all", "none", "none", 2
+ #"ocean_model", "tracer01_ady", "tracer01_ady", "tracers%8dy", "all", "none", "none", 2
  "ocean_model", "tracer02",    "tracer02",    "tracers%8dy", "all", "none", "none", 2
- "ocean_model", "tracer02_adx", "tracer02_adx", "tracers%8dy", "all", "none", "none", 2
- "ocean_model",	"tracer02_ady",	"tracer02_ady", "tracers%8dy", "all", "none", "none", 2
+ #"ocean_model", "tracer02_adx", "tracer02_adx", "tracers%8dy", "all", "none", "none", 2
+ #"ocean_model", "tracer02_ady", "tracer02_ady", "tracers%8dy", "all", "none", "none", 2
  "ocean_model", "tracer03",    "tracer03",    "tracers%8dy", "all", "none", "none", 2
- "ocean_model", "tracer03_adx", "tracer03_adx", "tracers%8dy", "all", "none", "none", 2
- "ocean_model",	"tracer03_ady",	"tracer03_ady", "tracers%8dy", "all", "none", "none", 2
- #"ocean_model", "tracer04",    "tracer04",    "tracers%8dy", "all", "none", "none", 2
- #"ocean_model", "tracer05",    "tracer05",    "tracers%8dy", "all", "none", "none", 2
- #"ocean_model", "tracer06",    "tracer06",    "tracers%8dy", "all", "none", "none", 2
- #"ocean_model", "tracer07",    "tracer07",    "tracers%8dy", "all", "none", "none", 2
- #"ocean_model", "tracer08",    "tracer08",    "tracers%8dy", "all", "none", "none", 2
- #"ocean_model", "tracer09",    "tracer09",    "tracers%8dy", "all", "none", "none", 2
+# "ocean_model", "tracer03_adx", "tracer03_adx", "tracers%8dy", "all", "none", "none", 2
+# "ocean_model", "tracer03_ady", "tracer03_ady", "tracers%8dy", "all", "none", "none", 2
+ "ocean_model", "tracer04",    "tracer04",    "tracers%8dy", "all", "none", "none", 2
+ "ocean_model", "tracer05",    "tracer05",    "tracers%8dy", "all", "none", "none", 2
+ "ocean_model", "tracer06",    "tracer06",    "tracers%8dy", "all", "none", "none", 2
+ "ocean_model", "tracer07",    "tracer07",    "tracers%8dy", "all", "none", "none", 2
+ "ocean_model", "tracer08",    "tracer08",    "tracers%8dy", "all", "none", "none", 2
+ "ocean_model", "tracer09",    "tracer09",    "tracers%8dy", "all", "none", "none", 2
 
 # Static variables:
  "ocean_model", "geolon",      "geolon",      "static", "all", .false., "none", 1
