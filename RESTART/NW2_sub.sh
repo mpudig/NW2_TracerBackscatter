@@ -1,9 +1,9 @@
 #!/bin/bash
 
-#SBATCH --nodes=2
+#SBATCH --nodes=4
 #SBATCH --ntasks-per-node=48
 #SBATCH --cpus-per-task=1
-#SBATCH --mem=16GB
+#SBATCH --mem=30GB
 #SBATCH --time=72:00:00
 #SBATCH --job-name=p125_SpinUp
 #SBATCH --output=slurm_%j.out
@@ -19,7 +19,6 @@ rm -rf $SCRATCH/NW2_TracerBackscatter/$EXP_NAME
 mkdir -p $SCRATCH/NW2_TracerBackscatter/$EXP_NAME
 cd $SCRATCH/NW2_TracerBackscatter/$EXP_NAME
 cp -r ~/NW2_TracerBackscatter/$EXP_NAME/* .
-cp $SCRATCH/NW2_TracerBackscatter/p25_SpinUp/RESTART/MOM.res.INTERPOLATED.nc $SCRATCH/NW2_TracerBackscatter/$EXP_NAME/INPUT/MOM.res.nc
 
 ## Run the model
 module purge
