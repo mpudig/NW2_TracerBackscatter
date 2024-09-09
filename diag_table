@@ -1,10 +1,10 @@
 "NeverWorld2"
 1 1 1 0 0 0
-"snapshots%8dy",     10, "days", 1, "days", "time",  500, "days"
+"snapshots%8dy",     500, "days", 1, "days", "time",  2500, "days"
 #"averages%8dy",      10, "days", 1, "days", "time",  500, "days"
-"longmean%8dy",    100, "days", 1, "days", "time", 2000, "days"
-#"forcing%8dy",     100, "days", 1, "days", "time", 2000, "days"
-"tracers%8dy",       10, "days", 1, "days", "time",  500, "days"
+#"longmean%8dy",    100, "days", 1, "days", "time", 2000, "days"
+#"forcing%8dy",     100, "days", 1, "days", "time", 2500, "days"
+"tracers%8dy",       500, "days", 1, "days", "time",  2500, "days"
 "static",           -1, "days", 1, "days", "time",
 
 # Prognostic fields:
@@ -18,8 +18,8 @@
 # "ocean_model", "Ahh",        "Ahh",          "snapshots%8dy", "all", "none", "none", 1
 
 # Diagnosed fields:
- "ocean_model", "uh",          "uh",          "snapshots%8dy", "all", "none", "none", 2
- "ocean_model", "vh",          "vh",          "snapshots%8dy", "all", "none", "none", 2
+# "ocean_model", "uh",          "uh",          "snapshots%8dy", "all", "none", "none", 2
+# "ocean_model", "vh",          "vh",          "snapshots%8dy", "all", "none", "none", 2
 # "ocean_model", "KE",          "KE",          "snapshots%8dy", "all", "none", "none", 2
 # "ocean_model", "dKE_dt",      "dKE_dt",      "snapshots%8dy", "all", "none", "none", 2
 # "ocean_model", "PE_to_KE",    "PE_to_KE",    "snapshots%8dy", "all", "none", "none", 2
@@ -103,14 +103,14 @@
 # Year long time averages:
 #  "ocean_model", "u",           "u",           "longmean%8dy",  "all", "mean", "none", 2
 #  "ocean_model", "v",           "v",           "longmean%8dy",  "all", "mean", "none", 2
-  "ocean_model", "h",           "h",           "longmean%8dy",  "all", "mean", "none", 2
+#  "ocean_model", "h",           "h",           "longmean%8dy",  "all", "mean", "none", 2
 #  "ocean_model", "e",           "e",           "longmean%8dy",  "all", "mean", "none", 2
 #  "ocean_model", "uh",          "uh",          "longmean%8dy",  "all", "mean", "none", 2
 #  "ocean_model", "vh",          "vh",          "longmean%8dy",  "all", "mean", "none", 2
 #  "ocean_model", "cg1",         "cg1",         "longmean%8dy",  "all", "mean", "none", 2
 #  "ocean_model", "Rd1",         "Rd1",         "longmean%8dy",  "all", "mean", "none", 2
 #  "ocean_model", "Rd_dx",       "Rd_dx",       "longmean%8dy",  "all", "mean", "none", 2
-  "ocean_model", "KE",          "KE",          "longmean%8dy",  "all", "mean", "none", 2
+#  "ocean_model", "KE",          "KE",          "longmean%8dy",  "all", "mean", "none", 2
 #  "ocean_model", "dKE_dt",      "dKE_dt",      "longmean%8dy",  "all", "mean", "none", 2
 #  "ocean_model", "PE_to_KE",    "PE_to_KE",    "longmean%8dy",  "all", "mean", "none", 2
 #  "ocean_model", "KE_CorAdv",   "KE_CorAdv",   "longmean%8dy",  "all", "mean", "none", 2
@@ -123,7 +123,7 @@
 # "ocean_model", "tauy",        "tauy",        "forcing%8dy",   "all", "none", "none", 2
 
 # Tracers:
- "ocean_model", "tracer01",    "tracer01",    "tracers%8dy", "all", "none", "none", 2
+"ocean_model", "tracer01",    "tracer01",    "tracers%8dy", "all", "none", "none", 2
  #"ocean_model", "tracer01_adx", "tracer01_adx", "tracers%8dy", "all", "none", "none", 2
  #"ocean_model", "tracer01_ady", "tracer01_ady", "tracers%8dy", "all", "none", "none", 2
  "ocean_model", "tracer02",    "tracer02",    "tracers%8dy", "all", "none", "none", 2
