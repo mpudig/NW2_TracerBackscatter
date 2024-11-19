@@ -31,7 +31,8 @@ while [ $counter -lt $N ]; do
     ### Change input.nml file to accept restart   
     sed -i "/^         input_filename = 'F'/s/input_filename = 'F'/input_filename = 'r'/g" input.nml
 
-    ### Run the model                                                            
+    ### Run the model (in RESTART folder to collect output files)                                                            
+    cd RESTART
     module purge
     source ~/NeverWorld2/build/intel/env
     srun ~/NeverWorld2/build/intel/ocean_only/repro/MOM6
