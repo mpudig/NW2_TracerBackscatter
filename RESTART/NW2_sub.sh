@@ -1,18 +1,18 @@
 #!/bin/bash
 
-#SBATCH --nodes=4
+#SBATCH --nodes=16
 #SBATCH --ntasks-per-node=48
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=30GB
-#SBATCH --time=96:00:00
-#SBATCH --job-name=p0625_SpinUp
+#SBATCH --time=12:00:00
+#SBATCH --job-name=p03125_SpinUp
 #SBATCH --output=slurm_%j.out
 #SBATCH --error=slurm_%j.err
 #SBATCH --mail-type=END
 #SBATCH --mail-user=mp6191@nyu.edu
 
 ## Set experiment name here
-EXP_NAME=p0625_SpinUp
+EXP_NAME=p03125_SpinUp
 
 ## Create an output directory /scratch/mp6191/NW2_TracerBackscatter/EXP_NAME and copy experiment files into it
 rm -rf $SCRATCH/NW2_TracerBackscatter/$EXP_NAME

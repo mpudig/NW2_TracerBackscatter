@@ -1,2 +1,5 @@
 # Slurm files
 slurm*
+
+# Restart files
+MOM.res.nc
