@@ -1,10 +1,10 @@
 "NeverWorld2"
 1 1 1 0 0 0
-"snapshots%8dy",     50, "days", 1, "days", "time",  100, "days"
+"snapshots%8dy",     5, "days", 1, "days", "time",  50, "days"
 #"averages%8dy",      10, "days", 1, "days", "time",  500, "days"
 #"longmean%8dy",    100, "days", 1, "days", "time", 2000, "days"
 #"forcing%8dy",     100, "days", 1, "days", "time", 2500, "days"
-"tracers%8dy",       50, "days", 1, "days", "time",  100, "days"
+"tracers%8dy",       5, "days", 1, "days", "time",  50, "days"
 "static",           -1, "days", 1, "days", "time",
 
 # Prognostic fields:
@@ -123,18 +123,18 @@
 # "ocean_model", "tauy",        "tauy",        "forcing%8dy",   "all", "none", "none", 2
 
 # Tracers:
- #"ocean_model", "tracer01",    "tracer01",    "tracers%8dy", "all", "none", "none", 2
+ "ocean_model", "tracer01",    "tracer01",    "tracers%8dy", "all", "none", "none", 2
  #"ocean_model", "tracer01_adx", "tracer01_adx", "tracers%8dy", "all", "none", "none", 2
  #"ocean_model", "tracer01_ady", "tracer01_ady", "tracers%8dy", "all", "none", "none", 2
- #"ocean_model", "tracer02",    "tracer02",    "tracers%8dy", "all", "none", "none", 2
+ "ocean_model", "tracer02",    "tracer02",    "tracers%8dy", "all", "none", "none", 2
  #"ocean_model", "tracer02_adx", "tracer02_adx", "tracers%8dy", "all", "none", "none", 2
  #"ocean_model", "tracer02_ady", "tracer02_ady", "tracers%8dy", "all", "none", "none", 2
- #"ocean_model", "tracer03",    "tracer03",    "tracers%8dy", "all", "none", "none", 2
+ "ocean_model", "tracer03",    "tracer03",    "tracers%8dy", "all", "none", "none", 2
  #"ocean_model", "tracer03_adx", "tracer03_adx", "tracers%8dy", "all", "none", "none", 2
  #"ocean_model", "tracer03_ady", "tracer03_ady", "tracers%8dy", "all", "none", "none", 2
- #"ocean_model", "tracer04",    "tracer04",    "tracers%8dy", "all", "none", "none", 2
- #"ocean_model", "tracer05",    "tracer05",    "tracers%8dy", "all", "none", "none", 2
- #"ocean_model", "tracer06",    "tracer06",    "tracers%8dy", "all", "none", "none", 2
+ "ocean_model", "tracer04",    "tracer04",    "tracers%8dy", "all", "none", "none", 2
+ "ocean_model", "tracer05",    "tracer05",    "tracers%8dy", "all", "none", "none", 2
+ "ocean_model", "tracer06",    "tracer06",    "tracers%8dy", "all", "none", "none", 2
  "ocean_model", "tracer07",    "tracer07",    "tracers%8dy", "all", "none", "none", 2
  "ocean_model", "tracer08",    "tracer08",    "tracers%8dy", "all", "none", "none", 2
  "ocean_model", "tracer09",    "tracer09",    "tracers%8dy", "all", "none", "none", 2

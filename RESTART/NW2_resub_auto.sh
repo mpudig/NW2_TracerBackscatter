@@ -1,10 +1,10 @@
 #!/bin/bash
 
-#SBATCH --nodes=16
-#SBATCH --ntasks-per-node=48
+#SBATCH --nodes=44
+#SBATCH --ntasks-per-node=36
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=30GB
-#SBATCH --time=12:00:00
+#SBATCH --time=18:00:00
 #SBATCH --job-name=p03125_SpinUp
 #SBATCH --output=slurm_%j.out
 #SBATCH --error=slurm_%j.err
@@ -15,7 +15,7 @@
 EXP_NAME=p03125_SpinUp
 
 # Define the number of times to resubmit
-N=20
+N=2
 
 # Job counter (keeps track of how many times the job has run)
 counter=0
@@ -27,15 +27,21 @@ while [ $counter -lt $N ]; do
     ### Copy restart file from RESTART to INPUT within same experiment folder 
     cd $SCRATCH/NW2_TracerBackscatter/$EXP_NAME/
     cp RESTART/MOM.res.nc INPUT
-
+    cp RESTART/MOM.res_1.nc INPUT
+    cp RESTART/MOM.res_2.nc INPUT
+    cp RESTART/MOM.res_3.nc INPUT
+    cp RESTART/MOM.res_4.nc INPUT
+    
     ### Change input.nml file to accept restart   
     sed -i "/^         input_filename = 'F'/s/input_filename = 'F'/input_filename = 'r'/g" input.nml
 
-    ### Run the model (in RESTART folder to collect output files)                                                            
-    cd RESTART
+    ### Run the model
     module purge
     source ~/NeverWorld2/build/intel/env
     srun ~/NeverWorld2/build/intel/ocean_only/repro/MOM6
+
+    ### Move slurm files to restart
+    mv slurm* RESTART
     
     # Increment the counter
     ((counter++))
