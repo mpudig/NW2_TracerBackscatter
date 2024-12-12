@@ -5,17 +5,17 @@
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=30GB
 #SBATCH --time=18:00:00
-#SBATCH --job-name=p03125_SpinUp
+#SBATCH --job-name=p03125
 #SBATCH --output=slurm_%j.out
 #SBATCH --error=slurm_%j.err
 #SBATCH --mail-type=END
 #SBATCH --mail-user=mp6191@nyu.edu
 
 ## Set experiment name here
-EXP_NAME=p03125_SpinUp
+EXP_NAME=p03125
 
 # Define the number of times to resubmit
-N=2
+N=4
 
 # Job counter (keeps track of how many times the job has run)
 counter=0
