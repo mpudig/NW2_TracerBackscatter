@@ -19,7 +19,8 @@ rm -rf $SCRATCH/NW2_TracerBackscatter/$EXP_NAME
 mkdir -p $SCRATCH/NW2_TracerBackscatter/$EXP_NAME
 cd $SCRATCH/NW2_TracerBackscatter/$EXP_NAME
 cp -r ~/NW2_TracerBackscatter/$EXP_NAME/* .
-cp $SCRATCH/NW2_TracerBackscatter/p5_EBTBS_KHTR0_9Tracer_SpinUp/RESTART/MOM.res.nc $SCRATCH/NW2_TracerBackscatter/$EXP_NAME/INPUT
+#cp $SCRATCH/NW2_TracerBackscatter/p5_EBTBS_KHTR0_9Tracer_SpinUp/RESTART/MOM.res.nc $SCRATCH/NW2_TracerBackscatter/$EXP_NAME/INPUT
+cp $SCRATCH/NW2_TracerBackscatter/p5_EBTBS_KHTR0_9Tracer_SpinUp/RESTART/MOM.res.nc $SCRATCH/NW2_TracerBackscatter/$EXP_NAME/INPUT/MOM.res.nc
 
 ## Run the model
 module purge

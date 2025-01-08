@@ -1,6 +1,6 @@
 NIGLOBAL = 120
 NJGLOBAL = 280
-DT = 750.
+DT = 660.
 
 RESTART_CHECKSUMS_REQUIRED = False
 
@@ -51,10 +51,10 @@ USE_MEKE = True                 !   [Boolean] default = False
 EY24_EBT_BS = True       ! If true, use Kh from MEKE
 BACKSCAT_EBT_POWER = 2.
 FRICTWORK_BUG = True
-KILL_SWITCH_COEF = 0.208 !0.1666 !0.25           ! coefficient for kill switch
+KILL_SWITCH_COEF = 0.183        ! coefficient for kill switch (DT = 700 -> KSC = 0.208) 
 KHTH_USE_EBT_STRUCT = True
 RESOLN_USE_EBT = True
-MEKE_BHFRCOEFF = 1.0           !   [nondim] default = -1.0
+MEKE_BHFRCOEFF = 1.0            !   [nondim] default = -1.0
                                 ! The efficiency of the conversion of mean energy into MEKE by the biharmonic
                                 ! dissipation.  If MEKE_bhFRCOEFF is negative, this conversion is not used or
                                 ! calculated.
