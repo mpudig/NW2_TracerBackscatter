@@ -1,10 +1,10 @@
 #!/bin/bash
 
 #SBATCH --nodes=1
-#SBATCH --ntasks-per-node=8
+#SBATCH --ntasks-per-node=42
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=8GB
-#SBATCH --time=00:2:00
+#SBATCH --time=3:00:00
 #SBATCH --job-name=p5_noBS_KHTR0_dye
 #SBATCH --output=slurm_%j.out
 #SBATCH --error=slurm_%j.err
