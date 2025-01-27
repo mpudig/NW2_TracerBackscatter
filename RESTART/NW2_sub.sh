@@ -4,23 +4,22 @@
 #SBATCH --ntasks-per-node=42
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=10GB
-#SBATCH --time=1:00:00
-#SBATCH --job-name=p5_EBTBS_KHTR0
+#SBATCH --time=3:00:00
+#SBATCH --job-name=p5_EBTBS_KHTR0_dye
 #SBATCH --output=slurm_%j.out
 #SBATCH --error=slurm_%j.err
 #SBATCH --mail-type=END
 #SBATCH --mail-user=mp6191@nyu.edu
 
 ## Set experiment name here
-EXP_NAME=p5_EBTBS_KHTR0
+EXP_NAME=p5_EBTBS_KHTR0_dye
 
 ## Create an output directory /scratch/mp6191/NW2_TracerBackscatter/EXP_NAME and copy experiment files into it
 rm -rf $SCRATCH/NW2_TracerBackscatter/$EXP_NAME
 mkdir -p $SCRATCH/NW2_TracerBackscatter/$EXP_NAME
 cd $SCRATCH/NW2_TracerBackscatter/$EXP_NAME
 cp -r ~/NW2_TracerBackscatter/$EXP_NAME/* .
-#cp $SCRATCH/NW2_TracerBackscatter/p5_EBTBS_KHTR0_9Tracer_SpinUp/RESTART/MOM.res.nc $SCRATCH/NW2_TracerBackscatter/$EXP_NAME/INPUT
-cp $SCRATCH/NW2_TracerBackscatter/p5_EBTBS_KHTR0_9Tracer_SpinUp/RESTART/MOM.res.nc $SCRATCH/NW2_TracerBackscatter/$EXP_NAME/INPUT/MOM.res.nc
+mv $SCRATCH/NW2_TracerBackscatter/$EXP_NAME/INPUT/MOM.res.dye.nc $SCRATCH/NW2_TracerBackscatter/$EXP_NAME/INPUT/MOM.res.nc
 
 ## Run the model
 module purge

@@ -22,6 +22,22 @@ NW2_TRACER_GROUPS = 3		      	! default = 3
 NW2_TRACER_RESTORE_TIMESCALE = 730.0, 1460.0, 2190.0	!   [days]
                                 	! A list of timescales, one for each tracer group.
 
+! === module regional_dyes ===
+
+USE_REGIONAL_DYES = True            ! [Boolean] default = False
+                                    !! If true, use the regional_dyes tracer package.
+NUM_DYE_TRACERS = 1                 ! The number of dye tracers in this run. [integer]
+DYE_SOURCE_MINLON = 0.0             ! Minimum longitude of region dye will be
+                                    !! injected, in [m] or [km] or [degrees_E]
+DYE_SOURCE_MAXLON = 60.0            ! Maximum longitude of region dye will be
+                                    !! injected, in [m] or [km] or [degrees_E]
+DYE_SOURCE_MINLAT = -70.0           ! Minimum latitude of region dye will be
+                                    !! injected, in [m] or [km] or [degrees_N]
+DYE_SOURCE_MAXLAT = 70.0            ! Maximum latitude of region dye will be
+                                    !! injected, in [m] or [km] or [degrees_N]
+DYE_SOURCE_MINDEPTH = 0.0           ! Minimum depth of region dye will be injected [Z ~> m]
+DYE_SOURCE_MAXDEPTH = 25.0          ! Maximum depth of region dye will be injected [Z ~> m]
+
 ! === module MOM_lateral_mixing_coeffs ===
 USE_VARIABLE_MIXING = True     !   [Boolean] default = False
                                 ! If true, the variable mixing code will be called.  This allows diagnostics to
