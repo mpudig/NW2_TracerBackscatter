@@ -2,7 +2,7 @@ RESTART_CHECKSUMS_REQUIRED = False
 
 NIGLOBAL = 120
 NJGLOBAL = 280
-DT = 720. !600.
+DT = 600.
 
 ! === module MOM_diag_mediator ===
 DIAG_COODS  = "z Z ZSTAR"
@@ -52,7 +52,7 @@ EY24_EBT_BS = True       ! If true, use Kh from MEKE
 FRICTWORK_BUG = False
 BS_USE_SQG_STRUCT = True
 SQG_EXPO = 2.0
-KILL_SWITCH_COEF = 0.3 !0.25           ! coefficient for kill switch
+KILL_SWITCH_COEF = 0.25           ! coefficient for kill switch
 KHTH_USE_EBT_STRUCT = True
 RESOLN_USE_EBT = True
 MEKE_BHFRCOEFF = 1.0           !   [nondim] default = -1.0
