@@ -18,7 +18,6 @@
  "ocean_model", "tracer06",    "tracer06",    "snapshots%8dy", "all", "none", "none", 2
  "ocean_model", "tracer07",    "tracer07",    "snapshots%8dy", "all", "none", "none", 2
  "ocean_model", "tracer08",    "tracer08",    "snapshots%8dy", "all", "none", "none", 2
- "ocean_model", "tracer09",    "tracer09",    "snapshots%8dy", "all", "none", "none", 2
 
 # Averages:
 # "ocean_model", "e",           "e",           "averages%8dy", "all", "mean", "none", 2
