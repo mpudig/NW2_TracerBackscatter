@@ -11,15 +11,15 @@ DIAG_COORD_RES_Z = 5.0, 10.0, 20.0, 50.0, 100.0, 3815.0 ! [m]
 
 ! === module nw2_tracers ===
 
-USE_NW2_TRACERS = True			!   [Boolean] default = False
+!USE_NW2_TRACERS = True			!   [Boolean] default = False
                                 	! If true, use the NeverWorld2 tracers.
-KHTR = 0.0				!   [m2 s-1] default = 0.0
+!KHTR = 0.0				!   [m2 s-1] default = 0.0
                                     	! The background along-isopycnal tracer diffusivity.
-NW2_TRACER_GROUPS = 2		      	! default = 3
+!NW2_TRACER_GROUPS = 2		      	! default = 3
                                		! The number of tracer groups where a group is of four tracers initialized and
                                 	! restored to sin(2*pi*x), cos(2*pi*x), y and cos(pi*y), respectively. Each group is restored with an
                                 	! independent restoration rate.
-NW2_TRACER_RESTORE_TIMESCALE = 730.0, 2190.0	!   [days]
+!NW2_TRACER_RESTORE_TIMESCALE = 730.0, 2190.0	!   [days]
                                 	! A list of timescales, one for each tracer group.
 
 ! === module MOM_lateral_mixing_coeffs ===
@@ -120,7 +120,7 @@ MEKE_RD_MAX_SCALE = False       !   [nondim] default = False
                                 ! If true, the length scale used by MEKE is the minimum of
                                 ! the deformation radius or grid-spacing. Only used if
                                 ! MEKE_OLD_LSCALE=True
-MEKE_VISCOSITY_COEFF_KU = -1.7  !-0.15   !   [nondim] default = 0.0
+MEKE_VISCOSITY_COEFF_KU = -2.  !-0.15   !   [nondim] default = 0.0
                                 ! If non-zero, is the scaling coefficient in the expression forviscosity used to
                                 ! parameterize harmonic lateral momentum mixing byunresolved eddies represented
                                 ! by MEKE. Can be negative torepresent backscatter from the unresolved eddies.
