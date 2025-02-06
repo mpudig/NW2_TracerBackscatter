@@ -4,15 +4,15 @@
 #SBATCH --ntasks-per-node=42
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=16GB
-#SBATCH --time=12:00:00
-#SBATCH --job-name=SQG_testing1
+#SBATCH --time=6:00:00
+#SBATCH --job-name=SQG_testing2
 #SBATCH --output=slurm_%j.out
 #SBATCH --error=slurm_%j.err
 #SBATCH --mail-type=END
 #SBATCH --mail-user=mp6191@nyu.edu
 
 ## Set experiment name here
-EXP_NAME=p5_SQG_testing1
+EXP_NAME=p5_SQG_testing2
 
 ## Create an output directory /scratch/mp6191/NW2_TracerBackscatter/EXP_NAME and copy experiment files into it
 rm -rf $SCRATCH/NW2_TracerBackscatter/p5_SQG_testing/$EXP_NAME
