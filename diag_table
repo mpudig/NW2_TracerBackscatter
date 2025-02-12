@@ -1,6 +1,6 @@
 "NeverWorld2"
 1 1 1 0 0 0
-"snapshots%8dy",     500, "days", 1, "days", "time",  2500, "days"
+"snapshots%8dy",     500, "days", 1, "days", "time",  1000, "days"
 #"averages%8dy",      500, "days", 1, "days", "time",  500, "days"
 #"MMT_fields%8dy",    500, "days", 1, "days", "time", 500, "days"
 "static",            -1, "days", 1, "days", "time",

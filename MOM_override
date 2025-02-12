@@ -1,8 +1,8 @@
-RESTART_CHECKSUMS_REQUIRED = False
+!RESTART_CHECKSUMS_REQUIRED = False
 
 NIGLOBAL = 120
 NJGLOBAL = 280
-DT = 750.
+DT = 900.
 
 ! === module MOM_diag_mediator ===
 DIAG_COODS  = "z Z ZSTAR"
