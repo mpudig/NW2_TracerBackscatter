@@ -35,7 +35,7 @@ DYE_SOURCE_MINLAT = -70.0           ! Minimum latitude of region dye will be
                                     !! injected, in [m] or [km] or [degrees_N]
 DYE_SOURCE_MAXLAT = 70.0            ! Maximum latitude of region dye will be
                                     !! injected, in [m] or [km] or [degrees_N]
-DYE_SOURCE_MINDEPTH = 0.0           ! Minimum depth of region dye will be injected [Z ~> m]
+DYE_SOURCE_MINDEPTH = -100.0        ! Minimum depth of region dye will be injected [Z ~> m]
 DYE_SOURCE_MAXDEPTH = 25.0          ! Maximum depth of region dye will be injected [Z ~> m]
 
 ! === module MOM_lateral_mixing_coeffs ===
