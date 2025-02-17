@@ -1,11 +1,11 @@
-NIGLOBAL = 240
-NJGLOBAL = 560
-DT = 540.
-
 RESTART_CHECKSUMS_REQUIRED = False
 
+NIGLOBAL = 240
+NJGLOBAL = 560
+DT = 600.
+
 #override THICKNESS_CONFIG = "file"
-#override THICKNESS_FILE = "INPUT/p25_EBTBS_interp_IC_thickness.nc"
+#override THICKNESS_FILE = "INPUT/p25_SQGBS_interp_IC_thickness.nc"
 #override ADJUST_THICKNESS = True
 
 ! === module MOM_diag_mediator ===
@@ -53,12 +53,13 @@ USE_MEKE = True                 !   [Boolean] default = False
                                 ! If true, turns on the MEKE scheme which calculates
                                 ! a sub-grid mesoscale eddy kinetic energy budget.
 EY24_EBT_BS = True       ! If true, use Kh from MEKE
-BACKSCAT_EBT_POWER = 4.
-FRICTWORK_BUG = True
-KILL_SWITCH_COEF = 0.183        ! coefficient for kill switch (DT = 900 -> KSC = 0.25) 
+FRICTWORK_BUG = False
+BS_USE_SQG_STRUCT = True
+SQG_EXPO = 1.5
+KILL_SWITCH_COEF = 0.45           ! coefficient for kill switch
 KHTH_USE_EBT_STRUCT = True
 RESOLN_USE_EBT = True
-MEKE_BHFRCOEFF = 1.0            !   [nondim] default = -1.0
+MEKE_BHFRCOEFF = 1.0           !   [nondim] default = -1.0
                                 ! The efficiency of the conversion of mean energy into MEKE by the biharmonic
                                 ! dissipation.  If MEKE_bhFRCOEFF is negative, this conversion is not used or
                                 ! calculated.
@@ -123,7 +124,7 @@ MEKE_RD_MAX_SCALE = False       !   [nondim] default = False
                                 ! If true, the length scale used by MEKE is the minimum of
                                 ! the deformation radius or grid-spacing. Only used if
                                 ! MEKE_OLD_LSCALE=True
-MEKE_VISCOSITY_COEFF_KU = -1.0  !-0.15   !   [nondim] default = 0.0
+MEKE_VISCOSITY_COEFF_KU = -2.0 !-0.15   !   [nondim] default = 0.0
                                 ! If non-zero, is the scaling coefficient in the expression forviscosity used to
                                 ! parameterize harmonic lateral momentum mixing byunresolved eddies represented
                                 ! by MEKE. Can be negative torepresent backscatter from the unresolved eddies.
