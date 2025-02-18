@@ -3,7 +3,7 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=42
 #SBATCH --cpus-per-task=1
-#SBATCH --mem=8GB
+#SBATCH --mem=10GB
 #SBATCH --time=1:00:00
 #SBATCH --job-name=p5_noBS_KHTR0
 #SBATCH --output=slurm_%j.out
@@ -19,7 +19,7 @@ rm -rf $SCRATCH/NW2_TracerBackscatter/$EXP_NAME
 mkdir -p $SCRATCH/NW2_TracerBackscatter/$EXP_NAME
 cd $SCRATCH/NW2_TracerBackscatter/$EXP_NAME
 cp -r ~/NW2_TracerBackscatter/$EXP_NAME/* .
-cp $SCRATCH/NW2_TracerBackscatter/p5_noBS_KHTR0_9Tracer_SpinUp/RESTART/MOM.res.nc $SCRATCH/NW2_TracerBackscatter/$EXP_NAME/INPUT
+cp $SCRATCH/NW2_TracerBackscatter/p5_noBS_KHTR0_SpinUp/RESTART/MOM.res.nc $SCRATCH/NW2_TracerBackscatter/$EXP_NAME/INPUT/MOM.res.nc
 
 ## Run the model
 module purge

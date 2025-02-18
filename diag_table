@@ -10,18 +10,18 @@
  "ocean_model", "v",           "v",           "snapshots%8dy", "all", "none", "none", 2
  "ocean_model", "h",           "h",           "snapshots%8dy", "all", "none", "none", 2
 # "ocean_model", "MEKE",        "MEKE",        "snapshots%8dy", "all", "none", "none", 2
-# "ocean_model", "tracer01",    "tracer01",    "snapshots%8dy", "all", "none", "none", 2
-# "ocean_model", "tracer02",    "tracer02",    "snapshots%8dy", "all", "none", "none", 2
-# "ocean_model", "tracer03",    "tracer03",    "snapshots%8dy", "all", "none", "none", 2
-# "ocean_model", "tracer04",    "tracer04",    "snapshots%8dy", "all", "none", "none", 2
-# "ocean_model", "tracer05",    "tracer05",    "snapshots%8dy", "all", "none", "none", 2
-# "ocean_model", "tracer06",    "tracer06",    "snapshots%8dy", "all", "none", "none", 2
+ "ocean_model", "tracer01",    "tracer01",    "snapshots%8dy", "all", "none", "none", 2
+ "ocean_model", "tracer02",    "tracer02",    "snapshots%8dy", "all", "none", "none", 2
+ "ocean_model", "tracer03",    "tracer03",    "snapshots%8dy", "all", "none", "none", 2
+ "ocean_model", "tracer04",    "tracer04",    "snapshots%8dy", "all", "none", "none", 2
+ "ocean_model", "tracer05",    "tracer05",    "snapshots%8dy", "all", "none", "none", 2
+ "ocean_model", "tracer06",    "tracer06",    "snapshots%8dy", "all", "none", "none", 2
  "ocean_model", "tracer07",    "tracer07",    "snapshots%8dy", "all", "none", "none", 2
  "ocean_model", "tracer08",    "tracer08",    "snapshots%8dy", "all", "none", "none", 2
- "ocean_model", "tracer09",    "tracer09",    "snapshots%8dy", "all", "none", "none", 2
 
 # Averages:
- "ocean_model", "e",           "e",           "averages%8dy", "all", "mean", "none", 2
+ "ocean_model", "u",           "u",           "averages%8dy", "all", "mean", "none", 2
+ "ocean_model", "v",           "v",           "averages%8dy", "all", "mean", "none", 2
 
 # MMT fields
  "ocean_model", "h",               "h",               "MMT_fields%8dy", "all", "mean", "none", 2
@@ -33,12 +33,18 @@
  "ocean_model", "tracer02h",       "tracer02h",       "MMT_fields%8dy", "all", "mean", "none", 2
  "ocean_model", "tracer02_adx",    "tracer02_adx",    "MMT_fields%8dy", "all", "mean", "none", 2
  "ocean_model", "tracer02_ady",    "tracer02_ady",    "MMT_fields%8dy", "all", "mean", "none", 2
+ "ocean_model", "tracer03h",       "tracer03h",       "MMT_fields%8dy", "all", "mean", "none", 2
+ "ocean_model", "tracer03_adx",    "tracer03_adx",    "MMT_fields%8dy", "all", "mean", "none", 2
+ "ocean_model", "tracer03_ady",    "tracer03_ady",    "MMT_fields%8dy", "all", "mean", "none", 2
  "ocean_model", "tracer04h",       "tracer04h",       "MMT_fields%8dy", "all", "mean", "none", 2
  "ocean_model", "tracer04_adx",    "tracer04_adx",    "MMT_fields%8dy", "all", "mean", "none", 2
  "ocean_model", "tracer04_ady",    "tracer04_ady",    "MMT_fields%8dy", "all", "mean", "none", 2
  "ocean_model", "tracer05h",       "tracer05h",       "MMT_fields%8dy", "all", "mean", "none", 2
  "ocean_model", "tracer05_adx",    "tracer05_adx",    "MMT_fields%8dy", "all", "mean", "none", 2
  "ocean_model", "tracer05_ady",    "tracer05_ady",    "MMT_fields%8dy", "all", "mean", "none", 2
+ "ocean_model", "tracer06h",       "tracer06h",       "MMT_fields%8dy", "all", "mean", "none", 2
+ "ocean_model", "tracer06_adx",    "tracer06_adx",    "MMT_fields%8dy", "all", "mean", "none", 2
+ "ocean_model", "tracer06_ady",    "tracer06_ady",    "MMT_fields%8dy", "all", "mean", "none", 2
  "ocean_model", "tracer07h",       "tracer07h",       "MMT_fields%8dy", "all", "mean", "none", 2
  "ocean_model", "tracer07_adx",    "tracer07_adx",    "MMT_fields%8dy", "all", "mean", "none", 2
  "ocean_model", "tracer07_ady",    "tracer07_ady",    "MMT_fields%8dy", "all", "mean", "none", 2
