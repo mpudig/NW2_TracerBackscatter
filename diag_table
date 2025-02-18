@@ -22,7 +22,6 @@
 # Averages:
  "ocean_model", "u",           "u",           "averages%8dy", "all", "mean", "none", 2
  "ocean_model", "v",           "v",           "averages%8dy", "all", "mean", "none", 2
- "ocean_model", "h",           "h",           "averages%8dy", "all", "mean", "none", 2
 
 # MMT fields
  "ocean_model", "h",               "h",               "MMT_fields%8dy", "all", "mean", "none", 2
