@@ -10,14 +10,14 @@
  "ocean_model", "v",           "v",           "snapshots%8dy", "all", "none", "none", 2
  "ocean_model", "h",           "h",           "snapshots%8dy", "all", "none", "none", 2
  "ocean_model", "MEKE",        "MEKE",        "snapshots%8dy", "all", "none", "none", 2
-# "ocean_model", "tracer01",    "tracer01",    "snapshots%8dy", "all", "none", "none", 2
-# "ocean_model", "tracer02",    "tracer02",    "snapshots%8dy", "all", "none", "none", 2
-# "ocean_model", "tracer03",    "tracer03",    "snapshots%8dy", "all", "none", "none", 2
-# "ocean_model", "tracer04",    "tracer04",    "snapshots%8dy", "all", "none", "none", 2
-# "ocean_model", "tracer05",    "tracer05",    "snapshots%8dy", "all", "none", "none", 2
-# "ocean_model", "tracer06",    "tracer06",    "snapshots%8dy", "all", "none", "none", 2
-# "ocean_model", "tracer07",    "tracer07",    "snapshots%8dy", "all", "none", "none", 2
-# "ocean_model", "tracer08",    "tracer08",    "snapshots%8dy", "all", "none", "none", 2
+ "ocean_model", "tracer01",    "tracer01",    "snapshots%8dy", "all", "none", "none", 2
+ "ocean_model", "tracer02",    "tracer02",    "snapshots%8dy", "all", "none", "none", 2
+ "ocean_model", "tracer03",    "tracer03",    "snapshots%8dy", "all", "none", "none", 2
+ "ocean_model", "tracer04",    "tracer04",    "snapshots%8dy", "all", "none", "none", 2
+ "ocean_model", "tracer05",    "tracer05",    "snapshots%8dy", "all", "none", "none", 2
+ "ocean_model", "tracer06",    "tracer06",    "snapshots%8dy", "all", "none", "none", 2
+ "ocean_model", "tracer07",    "tracer07",    "snapshots%8dy", "all", "none", "none", 2
+ "ocean_model", "tracer08",    "tracer08",    "snapshots%8dy", "all", "none", "none", 2
 
 # Averages:
 # "ocean_model", "e",           "e",           "averages%8dy", "all", "mean", "none", 2
