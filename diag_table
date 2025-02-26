@@ -9,7 +9,7 @@
  "ocean_model", "u",           "u",           "snapshots%8dy", "all", "none", "none", 2
  "ocean_model", "v",           "v",           "snapshots%8dy", "all", "none", "none", 2
  "ocean_model", "h",           "h",           "snapshots%8dy", "all", "none", "none", 2
-# "ocean_model", "MEKE",        "MEKE",        "snapshots%8dy", "all", "none", "none", 2
+ "ocean_model", "MEKE",        "MEKE",        "snapshots%8dy", "all", "none", "none", 2
  "ocean_model", "tracer01",    "tracer01",    "snapshots%8dy", "all", "none", "none", 2
  "ocean_model", "tracer02",    "tracer02",    "snapshots%8dy", "all", "none", "none", 2
  "ocean_model", "tracer03",    "tracer03",    "snapshots%8dy", "all", "none", "none", 2
