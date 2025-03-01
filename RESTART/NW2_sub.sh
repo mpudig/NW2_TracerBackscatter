@@ -1,25 +1,25 @@
 #!/bin/bash
 
-#SBATCH --nodes=1
+#SBATCH --nodes=4
 #SBATCH --ntasks-per-node=42
 #SBATCH --cpus-per-task=1
-#SBATCH --mem=10GB
-#SBATCH --time=2:00:00
-#SBATCH --job-name=p5_SQGBS_KHTR0
+#SBATCH --mem=12GB
+#SBATCH --time=1:30:00
+#SBATCH --job-name=p25_SQGBS
 #SBATCH --output=slurm_%j.out
 #SBATCH --error=slurm_%j.err
 #SBATCH --mail-type=END
 #SBATCH --mail-user=mp6191@nyu.edu
 
 ## Set experiment name here
-EXP_NAME=p5_SQGBS_KHTR0
+EXP_NAME=p25_SQGBS
 
 ## Create an output directory /scratch/mp6191/NW2_TracerBackscatter/EXP_NAME and copy experiment files into it
 rm -rf $SCRATCH/NW2_TracerBackscatter/$EXP_NAME
 mkdir -p $SCRATCH/NW2_TracerBackscatter/$EXP_NAME
 cd $SCRATCH/NW2_TracerBackscatter/$EXP_NAME
 cp -r ~/NW2_TracerBackscatter/$EXP_NAME/* .
-cp $SCRATCH/NW2_TracerBackscatter/p5_SQGBS_KHTR0_SpinUp/RESTART/MOM.res.nc $SCRATCH/NW2_TracerBackscatter/$EXP_NAME/INPUT/MOM.res.nc
+cp $SCRATCH/NW2_TracerBackscatter/p25_SQGBS_KHTR0_SpinUp/RESTART/MOM.res.nc $SCRATCH/NW2_TracerBackscatter/$EXP_NAME/INPUT/MOM.res.nc
 
 ## Run the model
 module purge
