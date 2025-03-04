@@ -3,3 +3,6 @@ slurm*
 
 # Jupyter notebooks
 .ipynb*
+
+# Restart files
+MOM.res*
