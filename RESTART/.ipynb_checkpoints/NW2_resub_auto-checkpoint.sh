@@ -51,7 +51,8 @@ while [ $counter -lt $N ]; do
 
     # Resubmit the same job after it finishes (using `sbatch` to resubmit the script)                                                                                              
     if [ $counter -lt $N ]; then
-        # Resubmit the current script (the $0 refers to the script itself, so SLURM will submit another instance of the same job, and the dependency is to make sure the next job only runs after the previous one completes successfully)                                                                                                                           
+        # Resubmit the current script (the $0 refers to the script itself, so SLURM will submit another instance of the same job, and the dependency is to make sure the next job \
+only runs after the previous one completes successfully)                                                                                                                           
         sbatch --dependency=afterok:$SLURM_JOB_ID $0
         echo "Resubmitting job. Current iteration: $counter"
         exit 0  # Exit to prevent further execution in the current job's instance                                                                                                  
