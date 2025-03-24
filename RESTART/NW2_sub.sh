@@ -4,7 +4,7 @@
 #SBATCH --ntasks-per-node=42
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=12GB
-#SBATCH --time=1:30:00
+#SBATCH --time=2:00:00
 #SBATCH --job-name=p25_SQGBS
 #SBATCH --output=slurm_%j.out
 #SBATCH --error=slurm_%j.err
