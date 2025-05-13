@@ -1,8 +1,9 @@
-!RESTART_CHECKSUMS_REQUIRED = False
-
 NIGLOBAL = 120
 NJGLOBAL = 280
 DT = 900.
+
+!RESTART_CHECKSUMS_REQUIRED = False
+ENERGYFILE = "ocean.stats"
 
 ! === module MOM_diag_mediator ===
 DIAG_COODS  = "z Z ZSTAR"
